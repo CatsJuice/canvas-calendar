@@ -1,0 +1,14 @@
+.calendar-frame {
+  max-width: 400px;
+  max-height: 860px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(100, 100, 100, 0.2);
+}
+
+@media (max-width: 450px) {
+  .calendar-frame {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

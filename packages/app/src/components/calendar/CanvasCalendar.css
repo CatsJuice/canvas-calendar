@@ -1,0 +1,34 @@
+.calendar-header {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px) saturate(180%);
+  border-bottom: 0.5px solid rgba(100, 100, 100, 0.2);
+  z-index: 10;
+}
+
+.calendar-current {
+  padding: 10px 20px 0px 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.week-labels {
+  font-size: 12px;
+}
+
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  .calendar-header {
+    background-color: rgba(40, 40, 40, 0.5);
+  }
+}
+
+.hover-rect {
+  opacity: 0;
+  background-color: rgba(100, 100, 100, 0.05);
+  transition: opacity 0.1s ease-in-out;
+  pointer-events: none;
+  cursor: pointer;
+}
+.hover-rect[data-show] {
+  opacity: 1;
+}
